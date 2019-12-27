@@ -1,0 +1,168 @@
+body {
+  margin: auto;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: url(icon1/bg.jpg);
+  animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 790px;
+  }
+}
+
+.current-score1 {
+  margin: 0px;
+}
+
+.inner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.title {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -300px;
+}
+
+.star {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 18px;
+  background-color: #bbc1c2;
+  outline: none;
+  cursor: pointer;
+}
+
+.star:hover {
+  background-color: rgb(142, 146, 146);
+  border: 2px solid black;
+}
+
+.plane {
+  width: 70px;
+  height: 160px;
+  position: absolute;
+  left: calc(50vw - 30px);
+  top: 80%;
+  background: url(icon1/shoot.png);
+  display: none;
+}
+
+.bulletVoice {
+  display: none;
+}
+
+.bullet {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-image: url(icon1/ball.png);
+  display: none;
+}
+
+.blue-bullet {
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border-radius: 50px;
+  background-image: url(icon/blue_bullet.png);
+  display: none;
+}
+
+.enemy1 {
+  position: absolute;
+  width: 55px;
+  height: 58px;
+  background-image: url(icon1/smallbaskt.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enemy2 {
+  position: absolute;
+  width: 85px;
+  height: 79px;
+  background-image: url(icon1/bigbasket.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bullet-award {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background-image: url(icon1/blueaward.png);
+}
+
+.boom {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url("icon/explosion.png") no-repeat;
+  animation: boom 1.2s steps(14) infinite;
+  transform: scale(1);
+}
+@keyframes boom {
+  100% {
+    background-position: -896px, 0;
+  }
+}
+
+.record {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #bbc1c2;
+  line-height: 40px;
+  display: none;
+}
+
+.plane-name {
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+.score {
+  width: 160px;
+  height: 82px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  line-height: 82px;
+}
+
+.restart {
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>打飞机</title>
+  <link rel="stylesheet" href="plane.css">
+</head>
+<body>
+  <div class="bg">
+    <!-- <div class="loading">游戏加载中</div> -->
+    <div class="inner">
+
+      <div class="current-score">
+        <p class="current-score1">分数：</p>
+        <span></span>
+      </div>
+      <!-- <img src="" class="title"></img> -->
+      <button class="star">开始游戏</button>
+      <div class="plane" ></div>
+      <audio src="media/bullet.mp3"controls autoplay loop class="bulletVoice"></audio>
+      <div class="record">
+        <div class="plane-name">飞机大战分数</div>
+        <div class="score">6100</div>
+        <div class="restart">重新开始</div>
+      </div>
+
+   </div>
+  </div>
+  <script src="plane.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"></script>
+</body>
+</html>
