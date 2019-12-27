@@ -2,11 +2,16 @@ body {
   margin: auto;
 }
 
+::selection {
+  background-color: transparent;
+}
+
 .bg {
   width: 100vw;
   height: 100vh;
   background: url(icon1/bg.jpg);
   animation: move 30s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes move {
@@ -19,6 +24,7 @@ body {
 }
 
 .current-score1 {
+  color: white;
   margin: 0px;
 }
 
@@ -39,7 +45,7 @@ body {
 
 .star {
   width: 100px;
-  height: 45px;
+  height: 40px;
   position: absolute;
   top: 80%;
   left: 50%;
@@ -131,8 +137,6 @@ body {
 }
 
 .record {
-  width: 160px;
-  height: 160px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,18 +145,23 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   background-color: #bbc1c2;
-  line-height: 40px;
+  opacity: 0.5;
   display: none;
 }
 
-.plane-name {
+.score-name {
+  line-height: 60px;
+  text-align: center;
+  color: black;
   width: 160px;
-  height: 40px;
-  font-size: 20px;
+  height: 60px;
+  font-size: 18px;
   border-bottom: 1px solid black;
 }
 
 .score {
+  text-align: center;
+  color: black;
   width: 160px;
   height: 82px;
   font-size: 20px;
@@ -162,7 +171,10 @@ body {
 }
 
 .restart {
+  text-align: center;
+  color: black;
   width: 160px;
-  height: 40px;
-  font-size: 20px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
 }
